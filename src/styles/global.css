@@ -20,6 +20,22 @@
     height: 60px;
 }
 
+.nav-voices-font {
+    font-family: "Helvetica Neue"
+}
+
+.box-shadow-bottom::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background: linear-gradient(to right, rgba(0,0,0,0.2), transparent);
+  border-radius: 0 0 8px 8px;
+}
+
+
 @media (min-width: 1024px) {
   .bg-diagonal-split {
     background-image: linear-gradient(
