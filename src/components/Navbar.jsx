@@ -12,7 +12,7 @@ export default function Navbar(){
             {/* Hamburger button - visibile solo su mobile */}
             <button 
                 onClick={() => setIsOpen(!isOpen)} 
-                className="md:hidden flex flex-col space-y-1 p-2"
+                className="lg:hidden flex flex-col space-y-1 p-2"
                 aria-label="Toggle menu"
             >
                 <span className={`block h-0.5 w-6 bg-lime-400 transition-transform duration-300 ease-in-out ${isOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
@@ -21,7 +21,7 @@ export default function Navbar(){
             </button>
 
             <ul className={`nav-voices-font gap-10 text-xl text-lime-400 font-semibold italic uppercase
-            ${isOpen ? 'flex flex-col absolute top-full left-0 w-full bg-white shadow-lg py-4 md:relative md:flex md:flex-row md:py-0 md:bg-transparent md:shadow-none' : 'hidden md:flex'}`
+            ${isOpen ? 'flex flex-col absolute top-full left-0 w-full backdrop-blur shadow-lg py-4 md:relative md:flex md:flex-row md:py-0 md:bg-transparent md:shadow-none' : 'hidden md:flex'}`
             }>
                 <li>Home</li>
                 <li>il park</li>
