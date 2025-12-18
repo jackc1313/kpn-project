@@ -35,6 +35,18 @@
   border-radius: 0 0 8px 8px;
 }
 
+.layout-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.layout-root > footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center
+}
+
 
 @media (min-width: 1024px) {
   .bg-diagonal-split {

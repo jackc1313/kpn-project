@@ -12,8 +12,11 @@ import "../styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-diagonal-split">
+	<body class="bg-diagonal-split layout-root">
 		<slot />
+		<footer>
+			<span>Instagram logo</span>
+		</footer>
 	</body>
 </html>
 
