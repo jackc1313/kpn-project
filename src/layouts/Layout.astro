@@ -1,6 +1,8 @@
 ---
 const { title } = Astro.props;
 import "../styles/global.css";
+import Navbar from '../components/Navbar.jsx';
+import PageFooter from '../components/PageFooter.jsx';
 ---
 
 <!doctype html>
@@ -12,11 +14,10 @@ import "../styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-diagonal-split layout-root">
+	<body class="bg-diagonal-split flex flex-col min-h-screen">
+		<Navbar />
 		<slot />
-		<footer>
-			<span>Instagram logo</span>
-		</footer>
+		<PageFooter />
 	</body>
 </html>
 
